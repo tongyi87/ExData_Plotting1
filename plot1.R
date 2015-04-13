@@ -18,11 +18,9 @@ data$Global_active_power<-as.numeric(data$Global_active_power)
 png( file ="plot1.png",width  = 480,height = 480)
 
 hist(data$Global_active_power
-     , col="orangered" 
+     , col="red" 
      , main="Global Active Power"
      , xlab="Global Active Power (kilowatts)"
-     , ylab="Frequency"
-     , xlim=c(0,6)
-     , ylim=c(0, 1200))
+     , ylab="Frequency")
 
 dev.off()
